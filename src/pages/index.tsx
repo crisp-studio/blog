@@ -1,14 +1,14 @@
-import { graphql } from 'gatsby';
-import * as React from 'react';
-import { css } from '@emotion/core';
-import Helmet from 'react-helmet';
+import { graphql } from "gatsby";
+import * as React from "react";
+import { css } from "@emotion/core";
+import Helmet from "react-helmet";
 
-import Footer from '../components/Footer';
-import SiteNav from '../components/header/SiteNav';
-import PostCard from '../components/PostCard';
-import Wrapper from '../components/Wrapper';
-import IndexLayout from '../layouts';
-import config from '../website-config';
+import Footer from "../components/Footer";
+import SiteNav from "../components/header/SiteNav";
+import PostCard from "../components/PostCard";
+import Wrapper from "../components/Wrapper";
+import IndexLayout from "../layouts";
+import config from "../website-config";
 import {
   inner,
   outer,
@@ -18,9 +18,9 @@ import {
   SiteHeader,
   SiteHeaderContent,
   SiteMain,
-  SiteTitle,
-} from '../styles/shared';
-import { PageContext } from '../templates/post';
+  SiteTitle
+} from "../styles/shared";
+import { PageContext } from "../templates/post";
 
 const HomePosts = css`
   @media (min-width: 795px) {
@@ -32,7 +32,7 @@ const HomePosts = css`
     .post-card:nth-of-type(6n + 1):not(.no-image) .post-card-image-link {
       position: relative;
       flex: 1 1 auto;
-      border-radius: 5px 0 0 5px;
+      border-radius: 6px 0 0 6px;
     }
 
     .post-card:nth-of-type(6n + 1):not(.no-image) .post-card-image {
@@ -85,8 +85,12 @@ export interface IndexProps {
 }
 
 const IndexPage: React.FunctionComponent<IndexProps> = props => {
-  const width = props.data.header.childImageSharp.fluid.sizes.split(', ')[1].split('px')[0];
-  const height = String(Number(width) / props.data.header.childImageSharp.fluid.aspectRatio);
+  const width = props.data.header.childImageSharp.fluid.sizes
+    .split(", ")[1]
+    .split("px")[0];
+  const height = String(
+    Number(width) / props.data.header.childImageSharp.fluid.aspectRatio
+  );
   return (
     <IndexLayout css={HomePosts}>
       <Helmet>
@@ -100,21 +104,23 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
         <meta property="og:url" content={config.siteUrl} />
         <meta
           property="og:image"
-          content={`${config.siteUrl}${props.data.header.childImageSharp.fluid.src}`}
+          content={config.siteUrl + props.data.header.childImageSharp.fluid.src}
         />
-        {config.facebook && <meta property="article:publisher" content={config.facebook} />}
+        {config.facebook && (
+          <meta property="article:publisher" content={config.facebook} />
+        )}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={config.title} />
         <meta name="twitter:description" content={config.description} />
         <meta name="twitter:url" content={config.siteUrl} />
         <meta
           name="twitter:image"
-          content={`${config.siteUrl}${props.data.header.childImageSharp.fluid.src}`}
+          content={config.siteUrl + props.data.header.childImageSharp.fluid.src}
         />
         {config.twitter && (
           <meta
             name="twitter:site"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
+            content={`@${config.twitter.split("https://twitter.com/")[1]}`}
           />
         )}
         <meta property="og:image:width" content={width} />
@@ -123,16 +129,17 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
       <Wrapper>
         <header
           css={[outer, SiteHeader]}
-          style={{
-            backgroundImage: `url('${props.data.header.childImageSharp.fluid.src}')`,
-          }}
+          // TODO: Add better image handling for sharper background images
+          // style={{
+          //   backgroundImage: `url('${props.data.header.childImageSharp.fluid.src}')`,
+          // }}
         >
           <div css={inner}>
             <SiteHeaderContent>
               <SiteTitle>
                 {props.data.logo ? (
                   <img
-                    style={{ maxHeight: '45px' }}
+                    style={{ maxHeight: "45px" }}
                     src={props.data.logo.childImageSharp.fixed.src}
                     alt={config.title}
                   />
@@ -152,7 +159,7 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
                 // filter out drafts in production
                 return (
                   (post.node.frontmatter.draft !== true ||
-                    process.env.NODE_ENV !== 'production') && (
+                    process.env.NODE_ENV !== "production") && (
                     <PostCard key={post.node.fields.slug} post={post.node} />
                   )
                 );
@@ -172,7 +179,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query {
-    logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
+    logo: file(relativePath: { eq: "img/crisp-studio-logo-white.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
@@ -191,9 +198,8 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC },
-      filter: { frontmatter: { draft: { ne: true } } },
-      limit: 1000,
+      limit: 1000
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
         node {

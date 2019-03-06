@@ -1,12 +1,12 @@
-- id: Ghost
-  avatar: avatars/ghost.png
+- id: René Nauheimer
+  avatar: avatars/daniel-wirtz.jpeg
   bio: The professional publishing platform
   twitter: TryGhost
   facebook: ghost
   website: https://ghost.org/
   location: On a plane
-- id: Another Author
-  avatar: avatars/ghost.png
+- id: Daniel Wirtz
+  avatar: avatars/daniel-wirtz.jpeg
   bio: This is another test author with a profile background image
   twitter: TryGhost
   facebook: ghost

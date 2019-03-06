@@ -10,6 +10,8 @@ import { colors } from '../styles/colors';
 import { PageContext } from '../templates/post';
 
 const PostCardStyles = css`
+  @import url('https://rsms.me/inter/inter.css');
+
   flex: 1 1 300px;
   display: flex;
   flex-direction: column;
@@ -18,7 +20,7 @@ const PostCardStyles = css`
   min-height: 300px;
   background: #fff center center;
   background-size: cover;
-  border-radius: 5px;
+  border-radius: 6px;
   box-shadow: rgba(39, 44, 49, 0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
   transition: all 0.5s ease;
 
@@ -33,7 +35,7 @@ const PostCardImageLink = css`
   position: relative;
   display: block;
   overflow: hidden;
-  border-radius: 5px 5px 0 0;
+  border-radius: 6px 6px 0 0;
 `;
 
 const PostCardImage = styled.div`
@@ -78,7 +80,7 @@ const PostCardTitle = styled.h2`
 `;
 
 const PostCardExcerpt = styled.section`
-  font-family: Georgia, serif;
+  font-family: 'Inter', sans-serif;
 `;
 
 const PostCardMeta = styled.footer`
@@ -176,7 +178,7 @@ const AuthorProfileImage = styled.img`
   width: 100%;
   height: 100%;
   /* background: color(var(--lightgrey) l(+10%)); */
-  background: ${lighten('0.1', colors.lightgrey)}
+  background: ${lighten('0.1', colors.lightgrey)};
   border-radius: 100%;
   object-fit: cover;
 `;
@@ -205,15 +207,13 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({ post }) => {
       {post.frontmatter.image && (
         <Link className="post-card-image-link" css={PostCardImageLink} to={post.fields.slug}>
           <PostCardImage className="post-card-image">
-            {post.frontmatter.image &&
-              post.frontmatter.image.childImageSharp &&
-              post.frontmatter.image.childImageSharp.fluid && (
-                <Img
-                  alt={`${post.frontmatter.title} cover image`}
-                  style={{ height: '100%' }}
-                  fluid={post.frontmatter.image.childImageSharp.fluid}
-                />
-              )}
+            {post.frontmatter.image && post.frontmatter.image.childImageSharp.fluid && (
+              <Img
+                alt={`${post.frontmatter.title} cover image`}
+                style={{ height: '100%' }}
+                fluid={post.frontmatter.image.childImageSharp.fluid}
+              />
+            )}
           </PostCardImage>
         </Link>
       )}

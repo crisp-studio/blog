@@ -6,7 +6,6 @@ import { css } from '@emotion/core';
 import { colors } from '../../styles/colors';
 import SubscribeForm from './SubscribeForm';
 
-
 const SubscribeFormSection = styled.section`
   margin: 1.5em 0;
   padding: 6.5vw 7vw 7vw;
@@ -14,8 +13,8 @@ const SubscribeFormSection = styled.section`
   border: ${lighten('0.02', colors.whitegrey)} 1px solid;
   text-align: center;
   /* background: color(var(--whitegrey) l(+4%)); */
-  background: ${lighten('0.04', colors.whitegrey)};
-  border-radius: 7px;
+  background: ${colors.whitegrey};
+  border-radius: 6px;
 
   p {
     margin-bottom: 1em;

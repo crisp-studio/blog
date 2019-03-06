@@ -8,7 +8,7 @@ import { SocialLink } from '../../styles/shared';
 import config from '../../website-config';
 import Facebook from '../icons/facebook';
 import Twitter from '../icons/twitter';
-import SubscribeModal from '../subscribe/SubscribeOverlay';
+import SubscribeModal from '../subsribe/SubscribeOverlay';
 import SiteNavLogo from './SiteNavLogo';
 
 const HomeNavRaise = css`
@@ -147,9 +147,9 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
             <li role="menuitem">
               <Link to="/about">About</Link>
             </li>
-            <li role="menuitem">
+            {/* <li role="menuitem">
               <Link to="/tags/getting-started/">Getting Started</Link>
-            </li>
+            </li> */}
           </ul>
         </SiteNavLeft>
         <SiteNavRight>

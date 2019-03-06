@@ -1,7 +1,7 @@
-import { css } from '@emotion/core';
-import styled from '@emotion/styled'
-import { colors } from './colors';
-import { darken, lighten } from 'polished';
+import { css } from "@emotion/core";
+import styled from "@emotion/styled";
+import { colors } from "./colors";
+import { darken, lighten } from "polished";
 
 export const outer = css`
   position: relative;
@@ -78,7 +78,7 @@ export const SiteHeader = css`
   padding-bottom: 12px;
   color: #fff;
   /* background: color(var(--darkgrey) l(-5%)) no-repeat center center; */
-  background: ${darken('0.05', colors.darkgrey)} no-repeat center center;
+  background: ${colors.blue} no-repeat center center;
   background-size: cover;
 `;
 
@@ -94,7 +94,7 @@ export const SiteHeaderContent = styled.div`
 `;
 
 export const SiteHeaderStyles = css`
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -106,7 +106,7 @@ export const SiteHeaderStyles = css`
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
 
   :before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -118,7 +118,7 @@ export const SiteHeaderStyles = css`
   }
 
   :after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -138,7 +138,7 @@ export const SiteHeaderStyles = css`
 export const AuthorProfileImage = css`
   display: block;
   /* background: color(var(--lightgrey) l(+10%)); */
-  background: ${lighten('0.1', colors.lightgrey)};
+  background: ${lighten("0.1", colors.lightgrey)};
   border-radius: 100%;
   object-fit: cover;
   margin-right: 15px;

@@ -6,7 +6,6 @@ import { css } from '@emotion/core';
 import { colors } from '../../styles/colors';
 import config from '../../website-config';
 
-
 const SubscribeFormStyles = css`
   @media (max-width: 500px) {
     -ms-flex-direction: column;
@@ -25,7 +24,7 @@ const SubscribeEmail = styled.input`
   line-height: 1em;
   font-weight: normal;
   user-select: text;
-  border-radius: 5px;
+  border-radius: 6px;
   transition: border-color 0.15s linear;
 
   -webkit-appearance: none;
@@ -60,7 +59,7 @@ const SubscribeFormButton = styled.button`
     ${desaturate('0.1', darken('0.07', colors.blue))} 90%,
     ${desaturate('0.1', darken('0.04', colors.blue))}
   );
-  border-radius: 5px;
+  border-radius: 6px;
   box-shadow: 0 0 0 1px inset rgba(0, 0, 0, 0.14);
 
   -webkit-font-smoothing: subpixel-antialiased;
@@ -85,26 +84,31 @@ const FormGroup = styled.div`
 
 const SubscribeForm: React.FunctionComponent = () => {
   return (
-      <form
+    <form
       css={SubscribeFormStyles}
-        action={config.mailchimpAction}
-        method="post"
-        id="mc-embedded-subscribe-form"
-        name="mc-embedded-subscribe-form"
-        target="_blank"
-        noValidate
-      >
-        {/* This is required for the form to work correctly  */}
-        <FormGroup className="form-group">
-          <SubscribeEmail className="subscribe-email" type="email" name="EMAIL" placeholder="youremail@example.com" />
-        </FormGroup>
-        <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-          <input type="text" name={config.mailchimpName} tabIndex={-1} />
-        </div>
-        <SubscribeFormButton type="submit">
-          <span>Subscribe</span>
-        </SubscribeFormButton>
-      </form>
+      action={config.mailchimpAction}
+      method="post"
+      id="mc-embedded-subscribe-form"
+      name="mc-embedded-subscribe-form"
+      target="_blank"
+      noValidate
+    >
+      {/* This is required for the form to work correctly  */}
+      <FormGroup className="form-group">
+        <SubscribeEmail
+          className="subscribe-email"
+          type="email"
+          name="EMAIL"
+          placeholder="youremail@example.com"
+        />
+      </FormGroup>
+      <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+        <input type="text" name={config.mailchimpName} tabIndex={-1} />
+      </div>
+      <SubscribeFormButton type="submit">
+        <span>Subscribe</span>
+      </SubscribeFormButton>
+    </form>
   );
 };
 

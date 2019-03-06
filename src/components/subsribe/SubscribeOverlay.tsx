@@ -11,6 +11,7 @@ interface SubscribeOverlayProps {
 }
 
 const SubscribeOverlay = styled.div`
+  @import url('https://rsms.me/inter/inter.css');
   position: fixed;
   top: 0;
   right: 0;
@@ -49,7 +50,7 @@ const SubscribeOverlay = styled.div`
     font-weight: normal;
     letter-spacing: 0.5px;
     user-select: text;
-    border-radius: 8px;
+    border-radius: 6px;
     transition: border-color 0.15s linear;
 
     -webkit-appearance: none;
@@ -73,7 +74,7 @@ const SubscribeOverlay = styled.div`
       color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
       color(var(--blue) lightness(-4%) saturation(-10%))
     );
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0 0 0 1px inset rgba(0, 0, 0, 0.14);
 
     -webkit-font-smoothing: subpixel-antialiased;
@@ -138,7 +139,7 @@ const SubscribeOverlayTitle = styled.h1`
 const SubscribeOverlayDescription = styled.p`
   margin: 0 auto 50px;
   max-width: 650px;
-  font-family: Georgia, serif;
+  font-family: 'Inter', sans-serif;
   font-size: 3rem;
   line-height: 1.3em;
   font-weight: 300;
