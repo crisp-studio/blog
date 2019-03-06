@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-casper",
-  "description": "Casper for gatsby",
+  "name": "blog",
+  "description": "Our blog on GatsbyJS",
   "version": "0.0.0",
   "private": true,
-  "author": "Scott Cooper <scttcper@gmail.com>",
+  "author": "@wirtzdan ",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
