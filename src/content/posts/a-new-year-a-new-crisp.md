@@ -2,7 +2,7 @@
 title: "A new year, a new crisp"
 author: Daniel Wirtz
 tags: []
-image: a-new-year-a-new-crisp.png
+image: /assets/a-new-year-a-new-crisp.png
 date: "1863-11-19T10:00:00.000Z"
 draft: false
 ---

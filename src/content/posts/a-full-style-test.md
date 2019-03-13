@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Full and Comprehensive Style Test
-image: testimg-cover.jpg
+image: /assets/testimg-cover.jpg
 author: Daniel Wirtz
 date: 1005-09-30T07:03:47.149Z
 draft: false
