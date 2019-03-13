@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Full and Comprehensive Style Test
-image: img/testimg-cover.jpg
+image: testimg-cover.jpg
 author: Daniel Wirtz
 date: 1005-09-30T07:03:47.149Z
 draft: false
@@ -39,7 +39,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### Big Image
 
-![Test Image](img/testimg1.jpg)
+![Test Image](../../../static/assets/testimg1.jpg)
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
@@ -47,7 +47,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 
-![Small Test Image](img/testimg2.jpg)
+![Small Test Image](../../../static/assets/testimg2.jpg)
 
 Labore et dolore.
 

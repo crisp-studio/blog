@@ -31,8 +31,8 @@ export interface WebsiteConfig {
 const config: WebsiteConfig = {
   title: "Crisp Studio Blog",
   description: "A blog about the craft of digital products",
-  coverImage: "img/blog-cover.jpg",
-  logo: "img/crisp-studio-logo-white.png",
+  coverImage: "assets/blog-cover.jpg",
+  logo: "assets/crisp-studio-logo-white.png",
   lang: "en",
   siteUrl: "https://gatsby-casper.netlify.com",
   facebook: "https://www.facebook.com/ghost",
