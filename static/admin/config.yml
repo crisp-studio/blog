@@ -17,5 +17,18 @@ collections:
     fields:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - {
+          name: tags,
+          label: Tags,
+          widget: select,
+          multiple: true,
+          options: [speeches],
+        }
+      - {
+          name: author,
+          label: Author,
+          widget: select,
+          options: [Daniel Wirtz, René Nauheimer, Leo Bernard],
+        }
       - { name: image, label: Header Image, widget: image }
       - { name: body, label: Body, widget: markdown }
