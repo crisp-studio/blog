@@ -1,14 +1,14 @@
-import { graphql } from "gatsby";
-import * as React from "react";
-import { css } from "@emotion/core";
-import Helmet from "react-helmet";
+import { graphql } from 'gatsby';
+import * as React from 'react';
+import { css } from '@emotion/core';
+import Helmet from 'react-helmet';
 
-import Footer from "../components/Footer";
-import SiteNav from "../components/header/SiteNav";
-import PostCard from "../components/PostCard";
-import Wrapper from "../components/Wrapper";
-import IndexLayout from "../layouts";
-import config from "../website-config";
+import Footer from '../components/Footer';
+import SiteNav from '../components/header/SiteNav';
+import PostCard from '../components/PostCard';
+import Wrapper from '../components/Wrapper';
+import IndexLayout from '../layouts';
+import config from '../website-config';
 import {
   inner,
   outer,
@@ -18,9 +18,9 @@ import {
   SiteHeader,
   SiteHeaderContent,
   SiteMain,
-  SiteTitle
-} from "../styles/shared";
-import { PageContext } from "../templates/post";
+  SiteTitle,
+} from '../styles/shared';
+import { PageContext } from '../templates/post';
 
 const HomePosts = css`
   @media (min-width: 795px) {
@@ -86,10 +86,10 @@ export interface IndexProps {
 
 const IndexPage: React.FunctionComponent<IndexProps> = props => {
   const width = props.data.header.childImageSharp.fluid.sizes
-    .split(", ")[1]
-    .split("px")[0];
+    .split(', ')[1]
+    .split('px')[0];
   const height = String(
-    Number(width) / props.data.header.childImageSharp.fluid.aspectRatio
+    Number(width) / props.data.header.childImageSharp.fluid.aspectRatio,
   );
   return (
     <IndexLayout css={HomePosts}>
@@ -120,7 +120,7 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
         {config.twitter && (
           <meta
             name="twitter:site"
-            content={`@${config.twitter.split("https://twitter.com/")[1]}`}
+            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
           />
         )}
         <meta property="og:image:width" content={width} />
@@ -139,7 +139,7 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
               <SiteTitle>
                 {props.data.logo ? (
                   <img
-                    style={{ maxHeight: "45px" }}
+                    style={{ maxHeight: '45px' }}
                     src={props.data.logo.childImageSharp.fixed.src}
                     alt={config.title}
                   />
@@ -159,7 +159,7 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
                 // filter out drafts in production
                 return (
                   (post.node.frontmatter.draft !== true ||
-                    process.env.NODE_ENV !== "production") && (
+                    process.env.NODE_ENV !== 'production') && (
                     <PostCard key={post.node.fields.slug} post={post.node} />
                   )
                 );
@@ -179,7 +179,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query {
-    logo: file(relativePath: { eq: "assets/crisp-studio-logo-white.png" }) {
+    logo: file(relativePath: { eq: "crisp-studio-logo-white.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
@@ -188,7 +188,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    header: file(relativePath: { eq: "assets/blog-cover.jpg" }) {
+    header: file(relativePath: { eq: "blog-cover.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
