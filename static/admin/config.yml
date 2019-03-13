@@ -4,6 +4,7 @@ backend:
 
 publish_mode: editorial_workflow
 
+site_url: https://blog.crisp.studio
 media_folder: static/assets
 public_folder: assets
 
@@ -11,6 +12,7 @@ collections:
   - name: post
     label: Post
     folder: src/content/posts
+    preview_path: /{{slug}}
     create: true
     fields:
       - { name: date, label: Date, widget: date }
