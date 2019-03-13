@@ -1,16 +1,19 @@
 backend:
-  name: test-repo
+  name: git-gateway
+  branch: master
+
+publish_mode: editorial_workflow
 
 media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: post
+    label: Post
+    folder: src/content/posts
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: image, label: Header Image, widget: image }
       - { name: body, label: Body, widget: markdown }
