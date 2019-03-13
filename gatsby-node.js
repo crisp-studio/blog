@@ -3,8 +3,9 @@ const _ = require("lodash");
 const { fmImagesToRelative } = require("gatsby-remark-relative-images");
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  fmImagesToRelative(node); // convert image paths for gatsby images
   const { createNodeField } = actions;
+
+  fmImagesToRelative(node); // convert image paths for gatsby images
 
   // Sometimes, optional fields tend to get not picked up by the GraphQL
   // interpreter if not a single content uses it. Therefore, we're putting them
@@ -25,26 +26,26 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       createNodeField({
         node,
         name: "slug",
-        value: slug || ""
+        value: slug || "",
       });
-      c;
       // Used to determine a page layout.
       createNodeField({
         node,
         name: "layout",
-        value: layout || ""
+        value: layout || "",
       });
 
       createNodeField({
         node,
         name: "primaryTag",
-        value: primaryTag || ""
+        value: primaryTag || "",
       });
     }
   }
 };
 
 exports.createPages = async ({ graphql, actions }) => {
+  console.log("========== Create Pages ==========");
   const { createPage } = actions;
 
   const result = await graphql(`
@@ -134,8 +135,8 @@ exports.createPages = async ({ graphql, actions }) => {
         slug,
         prev,
         next,
-        primaryTag: node.frontmatter.tags ? node.frontmatter.tags[0] : ""
-      }
+        primaryTag: node.frontmatter.tags ? node.frontmatter.tags[0] : "",
+      },
     });
   });
 
@@ -145,16 +146,16 @@ exports.createPages = async ({ graphql, actions }) => {
     _.flatten(
       result.data.allMarkdownRemark.edges.map(edge => {
         return _.castArray(_.get(edge, "node.frontmatter.tags", []));
-      })
-    )
+      }),
+    ),
   );
   tags.forEach(tag => {
     createPage({
       path: `/tags/${_.kebabCase(tag)}/`,
       component: tagTemplate,
       context: {
-        tag
-      }
+        tag,
+      },
     });
   });
 
@@ -165,8 +166,8 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `/author/${_.kebabCase(edge.node.id)}/`,
       component: authorTemplate,
       context: {
-        author: edge.node.id
-      }
+        author: edge.node.id,
+      },
     });
   });
 };
@@ -175,7 +176,7 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
   // adds sourcemaps for tsx in dev mode
   if (stage === `develop` || stage === `develop-html`) {
     actions.setWebpackConfig({
-      devtool: "eval-source-map"
+      devtool: "eval-source-map",
     });
   }
 };

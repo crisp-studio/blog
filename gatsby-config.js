@@ -4,10 +4,10 @@ module.exports = {
   siteMetadata: {
     title: "Crisp Studio Blog",
     description: "Our Blog",
-    siteUrl: "https://blog.crisp.studio"
+    siteUrl: "https://blog.crisp.studio",
   },
   mapping: {
-    "MarkdownRemark.frontmatter.author": "AuthorYaml"
+    "MarkdownRemark.frontmatter.author": "AuthorYaml",
   },
   plugins: [
     {
@@ -15,21 +15,21 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/static/assets`,
-        name: "assets"
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/content`
-      }
+        name: "assets",
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "content",
-        path: `${__dirname}/src/content/posts`
-      }
+        path: `${__dirname}/src/content/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content`,
+      },
     },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
@@ -38,35 +38,35 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-relative-images`
+            resolve: `gatsby-remark-relative-images`,
           },
           {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 1170,
-              quality: 100
-            }
+              quality: 100,
+            },
           },
           {
             resolve: "gatsby-remark-responsive-iframe",
             options: {
-              wrapperStyle: "margin-bottom: 1rem"
-            }
+              wrapperStyle: "margin-bottom: 1rem",
+            },
           },
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
-          "gatsby-remark-abbr"
-        ]
-      }
+          "gatsby-remark-abbr",
+        ],
+      },
     },
     "gatsby-plugin-netlify-cms",
     "gatsby-transformer-json",
     {
       resolve: "gatsby-plugin-canonical-urls",
       options: {
-        siteUrl: "https://blog.crisp.studio"
-      }
+        siteUrl: "https://blog.crisp.studio",
+      },
     },
     "gatsby-plugin-emotion",
     "gatsby-plugin-typescript",
@@ -78,9 +78,9 @@ module.exports = {
       options: {
         postCssPlugins: [
           require("postcss-color-function"),
-          require("cssnano")()
-        ]
-      }
+          require("cssnano")(),
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -97,10 +97,10 @@ module.exports = {
         // Specifies what percentage of users should be tracked
         sampleRate: 100,
         // Determines how often site speed tracking beacons will be sent
-        siteSpeedSampleRate: 10
-      }
-    }
-  ]
+        siteSpeedSampleRate: 10,
+      },
+    },
+  ],
   // // for avoiding CORS while developing Netlify Functions locally
   // // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
   // developMiddleware: app => {
