@@ -10,19 +10,43 @@ module.exports = {
     "MarkdownRemark.frontmatter.author": "AuthorYaml"
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
-    "gatsby-plugin-sharp",
+    {
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/static/assets`,
+        name: "assets"
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content`
+      }
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "content",
-        path: path.join(__dirname, "src", "content")
+        path: `${__dirname}/src/content/posts`
       }
     },
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`
+          },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 1170,
+              quality: 100
+            }
+          },
           {
             resolve: "gatsby-remark-responsive-iframe",
             options: {
@@ -32,17 +56,11 @@ module.exports = {
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
-          "gatsby-remark-abbr",
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 1170,
-              quality: 100
-            }
-          }
+          "gatsby-remark-abbr"
         ]
       }
     },
+    "gatsby-plugin-netlify-cms",
     "gatsby-transformer-json",
     {
       resolve: "gatsby-plugin-canonical-urls",
@@ -52,7 +70,6 @@ module.exports = {
     },
     "gatsby-plugin-emotion",
     "gatsby-plugin-typescript",
-    "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-yaml",
     "gatsby-plugin-feed",
@@ -84,4 +101,17 @@ module.exports = {
       }
     }
   ]
+  // // for avoiding CORS while developing Netlify Functions locally
+  // // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
+  // developMiddleware: app => {
+  //   app.use(
+  //     "/.netlify/functions/",
+  //     proxy({
+  //       target: "http://localhost:9000",
+  //       pathRewrite: {
+  //         "/.netlify/functions/": ""
+  //       }
+  //     })
+  //   );
+  // }
 };
