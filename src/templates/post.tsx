@@ -211,8 +211,12 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
   let width = '';
   let height = '';
   if (post.frontmatter.image) {
-    width = post.frontmatter.image.childImageSharp.fluid.sizes.split(', ')[1].split('px')[0];
-    height = String(Number(width) / post.frontmatter.image.childImageSharp.fluid.aspectRatio);
+    width = post.frontmatter.image.childImageSharp.fluid.sizes
+      .split(', ')[1]
+      .split('px')[0];
+    height = String(
+      Number(width) / post.frontmatter.image.childImageSharp.fluid.aspectRatio,
+    );
   }
 
   return (
@@ -226,36 +230,55 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={post.frontmatter.title} />
         <meta property="og:description" content={post.excerpt} />
-        <meta property="og:url" content={config.siteUrl + props.pathContext.slug} />
+        <meta
+          property="og:url"
+          content={config.siteUrl + props.pathContext.slug}
+        />
         {post.frontmatter.image && (
           <meta
             property="og:image"
-            content={config.siteUrl + post.frontmatter.image.childImageSharp.fluid.src}
+            content={
+              config.siteUrl + post.frontmatter.image.childImageSharp.fluid.src
+            }
           />
         )}
-        <meta property="article:published_time" content={post.frontmatter.date} />
+        <meta
+          property="article:published_time"
+          content={post.frontmatter.date}
+        />
         {/* not sure if modified time possible */}
         {/* <meta property="article:modified_time" content="2018-08-20T15:12:00.000Z" /> */}
         {post.frontmatter.tags && (
           <meta property="article:tag" content={post.frontmatter.tags[0]} />
         )}
 
-        {config.facebook && <meta property="article:publisher" content={config.facebook} />}
-        {config.facebook && <meta property="article:author" content={config.facebook} />}
+        {config.facebook && (
+          <meta property="article:publisher" content={config.facebook} />
+        )}
+        {config.facebook && (
+          <meta property="article:author" content={config.facebook} />
+        )}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.frontmatter.title} />
         <meta name="twitter:description" content={post.excerpt} />
-        <meta name="twitter:url" content={config.siteUrl + props.pathContext.slug} />
+        <meta
+          name="twitter:url"
+          content={config.siteUrl + props.pathContext.slug}
+        />
         {post.frontmatter.image && (
           <meta
             name="twitter:image"
-            content={config.siteUrl + post.frontmatter.image.childImageSharp.fluid.src}
+            content={
+              config.siteUrl + post.frontmatter.image.childImageSharp.fluid.src
+            }
           />
         )}
         <meta name="twitter:label1" content="Written by" />
         <meta name="twitter:data1" content={post.frontmatter.author.id} />
         <meta name="twitter:label2" content="Filed under" />
-        {post.frontmatter.tags && <meta name="twitter:data2" content={post.frontmatter.tags[0]} />}
+        {post.frontmatter.tags && (
+          <meta name="twitter:data2" content={post.frontmatter.tags[0]} />
+        )}
         {config.twitter && (
           <meta
             name="twitter:site"
@@ -289,7 +312,9 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
                   {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
                     <>
                       <DateDivider>/</DateDivider>
-                      <Link to={`/tags/${_.kebabCase(post.frontmatter.tags[0])}/`}>
+                      <Link
+                        to={`/tags/${_.kebabCase(post.frontmatter.tags[0])}/`}
+                      >
                         {post.frontmatter.tags[0]}
                       </Link>
                     </>
@@ -324,11 +349,18 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
           <div css={inner}>
             <ReadNextFeed>
               {props.data.relatedPosts && (
-                <ReadNextCard tags={post.frontmatter.tags} relatedPosts={props.data.relatedPosts} />
+                <ReadNextCard
+                  tags={post.frontmatter.tags}
+                  relatedPosts={props.data.relatedPosts}
+                />
               )}
 
-              {props.pageContext.prev && <PostCard post={props.pageContext.prev} />}
-              {props.pageContext.next && <PostCard post={props.pageContext.next} />}
+              {props.pageContext.prev && (
+                <PostCard post={props.pageContext.prev} />
+              )}
+              {props.pageContext.next && (
+                <PostCard post={props.pageContext.next} />
+              )}
             </ReadNextFeed>
           </div>
         </aside>
@@ -342,7 +374,7 @@ export default PageTemplate;
 
 export const query = graphql`
   query($slug: String, $primaryTag: String) {
-    logo: file(relativePath: { eq: "assets/crisp-studio-logo-white.png" }) {
+    logo: file(relativePath: { eq: "crisp-studio-logo-white.png" }) {
       childImageSharp {
         fixed {
           ...GatsbyImageSharpFixed
@@ -382,7 +414,9 @@ export const query = graphql`
       }
     }
     relatedPosts: allMarkdownRemark(
-      filter: { frontmatter: { tags: { in: [$primaryTag] }, draft: { ne: true } } }
+      filter: {
+        frontmatter: { tags: { in: [$primaryTag] }, draft: { ne: true } }
+      }
       limit: 3
     ) {
       totalCount
