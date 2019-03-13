@@ -1,11 +1,11 @@
-import { Link, StaticQuery, graphql } from "gatsby";
-import * as React from "react";
-import styled from "@emotion/styled";
-import * as _ from "lodash";
+import { Link, StaticQuery, graphql } from 'gatsby';
+import * as React from 'react';
+import styled from '@emotion/styled';
+import * as _ from 'lodash';
 
-import { colors } from "../styles/colors";
-import InfinityIcon from "./icons/infinity";
-import config from "../website-config";
+import { colors } from '../styles/colors';
+import InfinityIcon from './icons/infinity';
+import config from '../website-config';
 
 export interface ReadNextCardStylesProps {
   coverImage: string;
@@ -29,7 +29,7 @@ const ReadNextCardStyles = styled.article`
     props.coverImage});
 
   :before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -180,7 +180,7 @@ const ReadNextCard: React.FunctionComponent<ReadNextProps> = props => {
     <StaticQuery
       query={graphql`
         query ReadNextQuery {
-          header: file(relativePath: { eq: "assets/blog-cover.jpg" }) {
+          header: file(relativePath: { eq: "blog-cover.jpg" }) {
             childImageSharp {
               # Specify the image processing specifications right in the query.
               # Makes it trivial to update as your page's design changes.

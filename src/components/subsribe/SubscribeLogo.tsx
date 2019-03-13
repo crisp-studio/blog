@@ -23,7 +23,7 @@ const SubscribeLogo = () => (
   <StaticQuery
     query={graphql`
       query SubscribeOverlayLogo {
-        logo: file(relativePath: { eq: "assets/crisp-studio-logo-white.png" }) {
+        logo: file(relativePath: { eq: "crisp-studio-logo-white.png" }) {
           childImageSharp {
             # Specify the image processing specifications right in the query.
             # Makes it trivial to update as your page's design changes.
@@ -37,7 +37,10 @@ const SubscribeLogo = () => (
     // tslint:disable-next-line:react-this-binding-issue
     render={(data: SiteNavLogoProps) =>
       data.logo && (
-        <SubscribeOverlayLogo src={data.logo.childImageSharp.fixed.src} alt={config.title} />
+        <SubscribeOverlayLogo
+          src={data.logo.childImageSharp.fixed.src}
+          alt={config.title}
+        />
       )
     }
   />
