@@ -1,27 +1,27 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: "Crisp Studio Blog",
-    description: "Our Blog",
-    siteUrl: "https://blog.crisp.studio",
+    title: 'Crisp Studio Blog',
+    description: 'Our Blog',
+    siteUrl: 'https://blog.crisp.studio',
   },
   mapping: {
-    "MarkdownRemark.frontmatter.author": "AuthorYaml",
+    'MarkdownRemark.frontmatter.author': 'AuthorYaml',
   },
   plugins: [
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/assets`,
-        name: "assets",
+        name: 'assets',
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "content",
+        name: 'content',
         path: `${__dirname}/src/content/posts`,
       },
     },
@@ -31,61 +31,61 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
             resolve: `gatsby-remark-relative-images`,
           },
           {
-            resolve: "gatsby-remark-images",
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 1170,
               quality: 100,
             },
           },
           {
-            resolve: "gatsby-remark-responsive-iframe",
+            resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: "margin-bottom: 1rem",
+              wrapperStyle: 'margin-bottom: 1rem',
             },
           },
-          "gatsby-remark-prismjs",
-          "gatsby-remark-copy-linked-files",
-          "gatsby-remark-smartypants",
-          "gatsby-remark-abbr",
+          'gatsby-remark-prismjs',
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-smartypants',
+          'gatsby-remark-abbr',
         ],
       },
     },
-    "gatsby-plugin-netlify-cms",
-    "gatsby-transformer-json",
+    'gatsby-plugin-netlify-cms',
+    'gatsby-transformer-json',
     {
-      resolve: "gatsby-plugin-canonical-urls",
+      resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: "https://blog.crisp.studio",
+        siteUrl: 'https://blog.crisp.studio',
       },
     },
-    "gatsby-plugin-emotion",
-    "gatsby-plugin-typescript",
-    "gatsby-plugin-react-helmet",
-    "gatsby-transformer-yaml",
-    "gatsby-plugin-feed",
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-yaml',
+    'gatsby-plugin-feed',
     {
-      resolve: "gatsby-plugin-postcss",
+      resolve: 'gatsby-plugin-postcss',
       options: {
         postCssPlugins: [
-          require("postcss-color-function"),
-          require("cssnano")(),
+          require('postcss-color-function'),
+          require('cssnano')(),
         ],
       },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-XXXX-Y",
+        trackingId: 'UA-XXXX-Y',
         // Puts tracking script in the head instead of the body
         head: true,
         // IP anonymization for GDPR compliance
@@ -93,7 +93,7 @@ module.exports = {
         // Disable analytics for users with `Do Not Track` enabled
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**"],
+        exclude: ['/preview/**'],
         // Specifies what percentage of users should be tracked
         sampleRate: 100,
         // Determines how often site speed tracking beacons will be sent
