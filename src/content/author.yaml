@@ -1,15 +1,15 @@
 - id: René Nauheimer
-  avatar: ./avatars/daniel-wirtz.jpeg
+  avatar: ./avatars/rene.jpg
   bio: The professional publishing platform
-  twitter: TryGhost
-  facebook: ghost
-  website: https://ghost.org/
-  location: On a plane
+  twitter: renaui
+  profile_image: ../../static/assets/alex-knight-326705-unsplash.jpg
 - id: Daniel Wirtz
-  avatar: ./avatars/daniel-wirtz.jpeg
+  avatar: ./avatars/daniel.jpg
   bio: This is another test author with a profile background image
-  twitter: TryGhost
-  facebook: ghost
-  website: https://ghost.org/
-  location: On a plane
+  twitter: wirtzdan
+  profile_image: ../../static/assets/alex-knight-326705-unsplash.jpg
+- id: Leo Bernard
+  avatar: ./avatars/leo.jpg
+  bio: This is another test author with a profile background image
+  twitter: leolabs_org
   profile_image: ../../static/assets/alex-knight-326705-unsplash.jpg
