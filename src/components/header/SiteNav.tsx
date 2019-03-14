@@ -3,11 +3,9 @@ import { Link } from 'gatsby';
 import * as React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
-
 import { SocialLink } from '../../styles/shared';
 import config from '../../website-config';
-import Facebook from '../icons/facebook';
-import Twitter from '../icons/twitter';
+import { Instagram } from 'react-feather';
 import SubscribeModal from '../subsribe/SubscribeOverlay';
 import SiteNavLogo from './SiteNavLogo';
 
@@ -154,31 +152,22 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
         </SiteNavLeft>
         <SiteNavRight>
           <SocialLinks>
-            {config.facebook && (
+            {config.instagram && (
               <a
                 css={SocialLink}
-                href={config.facebook}
+                href={config.instagram}
                 target="_blank"
-                title="Facebook"
+                title="Instagram"
                 rel="noopener noreferrer"
               >
-                <Facebook />
-              </a>
-            )}
-            {config.twitter && (
-              <a
-                css={SocialLink}
-                href={config.twitter}
-                title="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Twitter />
+                <Instagram />
               </a>
             )}
           </SocialLinks>
           {config.showSubscribe && (
-            <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
+            <SubscribeButton onClick={this.openModal}>
+              Subscribe
+            </SubscribeButton>
           )}
           {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
         </SiteNavRight>
