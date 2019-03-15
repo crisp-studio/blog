@@ -93,6 +93,18 @@ const SocialLinks = styled.div`
   }
 `;
 
+const StyledLi = styled.li`
+  display: flex !important;
+  align-items: center;
+
+  :before {
+    content: '';
+    height: 14px;
+    border-left: 1px solid #d5dcfc;
+    display: inline-flex;
+  }
+`;
+
 const SubscribeButton = styled.a`
   display: block;
   padding: 4px 10px;
@@ -145,6 +157,10 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
             <li role="menuitem">
               <Link to="/about">About</Link>
             </li>
+            <StyledLi role="menuitem">
+              <Link to="/tags/updates">Crisp Studio Updates</Link>
+            </StyledLi>
+
             {/* <li role="menuitem">
               <Link to="/tags/getting-started/">Getting Started</Link>
             </li> */}

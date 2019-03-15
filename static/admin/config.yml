@@ -22,7 +22,7 @@ collections:
           label: Tags,
           widget: select,
           multiple: true,
-          options: [speeches],
+          options: [updates, interviews, design, development],
         }
       - {
           name: author,
