@@ -228,7 +228,7 @@ export const PostFullContent = styled.section`
   h4,
   h5,
   h6 {
-    color: ${setLightness('0.05', colors.darkgrey)};
+    color: ${setLightness('0.25', colors.text)};
     font-family: 'Inter', sans-serif;
   }
 
@@ -327,9 +327,18 @@ export const PostFullContent = styled.section`
 
   table {
     -webkit-overflow-scrolling: touch;
-    background: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0
-        center,
-      radial-gradient(ellipse at right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+    background: radial-gradient(
+          ellipse at left,
+          rgba(0, 0, 0, 0.2) 0%,
+          rgba(0, 0, 0, 0) 75%
+        )
+        0 center,
+      radial-gradient(
+          ellipse at right,
+          rgba(0, 0, 0, 0.2) 0%,
+          rgba(0, 0, 0, 0) 75%
+        )
+        100% center;
     background-attachment: scroll, scroll;
     background-size: 10px 100%, 10px 100%;
     background-repeat: no-repeat;
@@ -400,7 +409,9 @@ export interface PostContentProps {
   htmlAst: any;
 }
 
-const PostContent: React.FunctionComponent<PostContentProps> = ({ htmlAst }) => {
+const PostContent: React.FunctionComponent<PostContentProps> = ({
+  htmlAst,
+}) => {
   return (
     <PostFullContent className="post-full-content">
       {/* TODO: this will apply the class when rehype-react is published https://github.com/rhysd/rehype-react/pull/11 */}

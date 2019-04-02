@@ -31,11 +31,12 @@ export const SiteTitle = styled.h1`
 export const SiteDescription = styled.h2`
   z-index: 10;
   margin: 0;
-  padding: 5px 0;
+  padding: 20px 0;
   font-size: 2.2rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.5px;
   opacity: 0.8;
+  max-width: 40rem;
 `;
 
 export const PostFeed = css`
