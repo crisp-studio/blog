@@ -31,10 +31,11 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'Crisp Studio Blog',
-  description: 'A blog about the craft of digital products',
+  title: 'Better in between',
+  description:
+    'Accelerating product teams at the intersection of design & code',
   coverImage: 'assets/blog-cover.jpg',
-  logo: 'assets/crisp-studio-logo-white.png',
+  logo: 'assets/better-in-between-logo.png',
   lang: 'en',
   siteUrl: 'https://blog.crisp.studio',
   instagram: 'https://www.instagram.com/crispstudio',
