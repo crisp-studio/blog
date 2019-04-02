@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Hello Design Sprints"
+title: 'Hello Design Sprints'
 author: René Nauheimer
-tags: ["Speeches"]
+tags: ['Speeches']
 image: /assets/hello-design-sprints.jpg
-date: "2012-08-20T15:11:55.000Z"
+date: '2019-01-21T15:11:55.000Z'
 draft: false
 ---
 

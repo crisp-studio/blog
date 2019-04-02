@@ -1,23 +1,17 @@
 ---
-title: "A new year, a new crisp"
+title: 'A new year, a new crisp'
 author: Daniel Wirtz
 tags: []
-image: /assets/a-new-year-a-new-crisp.png
-date: "1863-11-19T10:00:00.000Z"
+image: /assets/a-new-year-a-new-crisp.jpg
+date: '2019-01-03T10:00:00.000Z'
 draft: false
 ---
 
-# A new year, a new Crisp
-
-It’s the dawn of 2019 and we just made a big decision: We are stepping away from doing web design services and film production.
-
-![Making plans for 2019](https://cdn-images-1.medium.com/max/3386/1*iWQiFx3F76BPymQzzQFppw.png)_Making plans for 2019_
-
-This is **really big for us** because we were not doing bad business. In contrary, considering that we built up the company during our studies, we did really well.
-
-We always had something in the pipeline and did roughly 100K\$ in revenue in the last year.
+It’s the dawn of 2019 and we just made a big decision: We are stepping away from doing web design services and film production. This is **really big for us** because we were not doing bad business. In contrary, considering that we built up the company during our studies, we did really well. We always had something in the pipeline and did roughly 100K\$ in revenue in the last year.
 
 So why did we quit the traditional agency business? And what are we doing now? Let‘s dive in.
+
+---
 
 ## The quirks of traditional agency business
 
@@ -82,11 +76,3 @@ Creating digital products is now the _bulls-eye_ of our business model. We want 
 In the coming year, we want to help companies create digital products in a better and faster way. While leading by example and creating digital products on our own, in-house and with the goal to create lasting ventures.
 
 We are excited. Let’s get started!
-
-![](https://cdn-images-1.medium.com/max/3840/1*hGVXImT3GdnlydpWKuTNJg.png)
-
-**Hey! Thanks *a lot *for reading the article and being interested in our journey. If you want to follow along, we just created an email list (Literally 5 minutes ago).**
-
-**No spam, just some updates from time to time on what we are doing.**
-
-**If you are interested to follow along, you can [sign-up here](http://eepurl.com/gcZnzv).**
