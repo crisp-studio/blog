@@ -31,11 +31,11 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'Better in between',
+  title: 'Better In Between',
   description:
     'Accelerating product teams at the intersection of design & code',
   coverImage: 'assets/blog-cover.jpg',
-  logo: 'assets/better-in-between-logo.png',
+  logo: 'assets/better-in-between-logo.svg',
   lang: 'en',
   siteUrl: 'https://blog.crisp.studio',
   instagram: 'https://www.instagram.com/crispstudio',
