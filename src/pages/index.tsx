@@ -103,7 +103,7 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
         <meta property="og:title" content={config.title} />
         <meta property="og:description" content={config.description} />
         <meta property="og:url" content={config.siteUrl} />
-        <meta name="theme-color" content="#db5945" />
+        <meta name="theme-color" content="#01D274" />
         <meta
           property="og:image"
           content={config.siteUrl + props.data.header.childImageSharp.fluid.src}

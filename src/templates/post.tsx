@@ -230,6 +230,7 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={post.frontmatter.title} />
         <meta property="og:description" content={post.excerpt} />
+        <meta name="theme-color" content="#01D274" />
         <meta
           property="og:url"
           content={config.siteUrl + props.pathContext.slug}
