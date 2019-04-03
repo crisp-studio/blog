@@ -35,7 +35,6 @@ export const SiteDescription = styled.h2`
   font-size: 2.2rem;
   font-weight: 500;
   letter-spacing: 0.5px;
-  opacity: 0.8;
   max-width: 40rem;
 `;
 
@@ -61,7 +60,6 @@ export const SocialLink = css`
   margin: 0;
   padding: 10px;
   color: #fff;
-  opacity: 0.8;
 
   :hover {
     opacity: 1;

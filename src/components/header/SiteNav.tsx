@@ -64,7 +64,7 @@ const NavStyles = css`
     margin: 0;
     padding: 10px 12px;
     color: #fff;
-    opacity: 0.8;
+    opacity: 1;
   }
 
   li a:hover {
@@ -100,7 +100,7 @@ const StyledLi = styled.li`
   :before {
     content: '';
     height: 14px;
-    border-left: 1px solid #d5dcfc;
+    border-left: 1px solid #fff;
     display: inline-flex;
   }
 `;
@@ -113,7 +113,6 @@ const SubscribeButton = styled.a`
   font-size: 1.2rem;
   line-height: 1em;
   border-radius: 10px;
-  opacity: 0.8;
 
   :hover {
     text-decoration: none;

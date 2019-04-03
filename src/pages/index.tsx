@@ -1,14 +1,16 @@
-import { graphql } from 'gatsby';
 import * as React from 'react';
-import { css } from '@emotion/core';
-import Helmet from 'react-helmet';
-
-import Footer from '../components/Footer';
-import SiteNav from '../components/header/SiteNav';
-import PostCard from '../components/PostCard';
-import Wrapper from '../components/Wrapper';
-import IndexLayout from '../layouts';
 import config from '../website-config';
+import Footer from '../components/Footer';
+import Helmet from 'react-helmet';
+import IndexLayout from '../layouts';
+import logo from '../../static/assets/better-in-between-logo.svg';
+import PostCard from '../components/PostCard';
+import SiteNav from '../components/header/SiteNav';
+import Wrapper from '../components/Wrapper';
+import { css } from '@emotion/core';
+import { graphql } from 'gatsby';
+import { PageContext } from '../templates/post';
+
 import {
   inner,
   outer,
@@ -20,7 +22,6 @@ import {
   SiteMain,
   SiteTitle,
 } from '../styles/shared';
-import { PageContext } from '../templates/post';
 
 const HomePosts = css`
   @media (min-width: 795px) {
@@ -137,15 +138,11 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
           <div css={inner}>
             <SiteHeaderContent>
               <SiteTitle>
-                {props.data.logo ? (
-                  <img
-                    style={{ maxHeight: '140px' }}
-                    src={props.data.logo.childImageSharp.fixed.src}
-                    alt={config.title}
-                  />
-                ) : (
-                  config.title
-                )}
+                <img
+                  style={{ maxHeight: '140px', width: '100%' }}
+                  src={logo}
+                  alt={config.title}
+                />
               </SiteTitle>
               <SiteDescription>{config.description}</SiteDescription>
             </SiteHeaderContent>

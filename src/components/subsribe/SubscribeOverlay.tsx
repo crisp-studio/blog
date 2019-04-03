@@ -21,10 +21,11 @@ const SubscribeOverlay = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 25, 40, 0.97);
+  background: rgba(0, 10, 0, 0.97);
   opacity: ${(props: SubscribeOverlayProps) => (props.open ? 1 : 0)};
   transition: opacity 200ms ease-in;
-  pointer-events: ${(props: SubscribeOverlayProps) => (props.open ? 'auto' : 'none')};
+  pointer-events: ${(props: SubscribeOverlayProps) =>
+    props.open ? 'auto' : 'none'};
   backdrop-filter: blur(3px);
 
   form {
@@ -190,10 +191,12 @@ class SubscribeModal extends React.Component<any, SubscribeState> {
         <SubscribeOverlayClose onClick={this.close} />
         <SubscribeOverlayContent>
           <SubscribeLogo />
-          <SubscribeOverlayTitle>Subscribe to {config.title}</SubscribeOverlayTitle>
+          <SubscribeOverlayTitle>
+            Subscribe to {config.title}
+          </SubscribeOverlayTitle>
           <SubscribeOverlayDescription>
-            Stay up to date! Get all the latest &amp; greatest posts delivered straight to your
-            inbox
+            Stay up to date! Get all the latest &amp; greatest posts delivered
+            straight to your inbox
           </SubscribeOverlayDescription>
           <SubscribeForm />
         </SubscribeOverlayContent>

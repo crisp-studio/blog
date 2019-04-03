@@ -1,6 +1,7 @@
 import { graphql, StaticQuery } from 'gatsby';
 import * as React from 'react';
 import styled from '@emotion/styled';
+import signet from '../../../static/assets/better-in-between-signet.svg';
 
 import config from '../../website-config';
 
@@ -11,39 +12,8 @@ const SubscribeOverlayLogo = styled.img`
   height: 30px;
 `;
 
-interface SiteNavLogoProps {
-  logo?: {
-    childImageSharp: {
-      fixed: any;
-    };
-  };
-}
-
 const SubscribeLogo = () => (
-  <StaticQuery
-    query={graphql`
-      query SubscribeOverlayLogo {
-        logo: file(relativePath: { eq: "better-in-between-logo.png" }) {
-          childImageSharp {
-            # Specify the image processing specifications right in the query.
-            # Makes it trivial to update as your page's design changes.
-            fixed {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-      }
-    `}
-    // tslint:disable-next-line:react-this-binding-issue
-    render={(data: SiteNavLogoProps) =>
-      data.logo && (
-        <SubscribeOverlayLogo
-          src={data.logo.childImageSharp.fixed.src}
-          alt={config.title}
-        />
-      )
-    }
-  />
+  <SubscribeOverlayLogo src={signet} alt={config.title} />
 );
 
 export default SubscribeLogo;
