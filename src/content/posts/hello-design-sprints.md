@@ -30,7 +30,7 @@ To balance the “right now” work with the “coming soon” ideas in our pipe
 
 That’s where the Design Sprint is a relief. It’s like a vacuum time box. No phone calls, no e-mail, no meetings. Give up mind-shifting between various tasks. It’s one big challenge, a clean schedule, and a guiding process.
 
-![The Design Sprint by Jake Knapp at Google Ventures](https://cdn-images-1.medium.com/max/NaN/1*lR5yznnub3PKlGhfcUHqlg.png)_The Design Sprint by Jake Knapp at Google Ventures_
+![The Design Sprint by Jake Knapp at Google Ventures](../../../static/assets/design-sprint-week.png)_The Design Sprint by Jake Knapp at Google Ventures_
 
 ## Start with a keystone challenge
 
@@ -48,9 +48,7 @@ Guessing, discussing and trying to convince the team on an idea without solid da
 
 Go from having concepts of ideas to developing a realistic looking prototype. One that looks and feels like the real product. Or as Jake Knapp states it: “Get a lot of the benefits you would have gotten by launching with not launching at all but moving much more quickly.”
 
-![](https://cdn-images-1.medium.com/max/2000/1*CFr2Aun1ku1s6kb6myUwug.gif)
-
-![Rapid Prototyping — Random example with Google Calendar](https://cdn-images-1.medium.com/max/2000/1*DelvfjTay28fipq4LJcEXg.gif)_Rapid Prototyping — Random example with Google Calendar_
+![Rapid Prototyping — Random example with Google Calendar](../../../static/assets/rapid-prototyping.gif)_Rapid Prototyping — Random example with Google Calendar_
 
 At the end of the week, the team has a high-fidelity prototype and a lot of insights. That prototype is a simulated version of the product. It _appears_ realistic because you can swipe and tap but it’s the facade of the product.
 
@@ -64,7 +62,7 @@ Drum-roll, please! On Friday, the last day of the Sprint, five target users will
 
 The User Researcher will guide the session. In the end, you won’t get that large scale quantitive data that you’ll get from launch. But it will help understand _why_ things work or don’t work.
 
-![Farmhouse by [febin_raj](https://dribbble.com/Febinraj) for [Fireart Studio](https://dribbble.com/Fireart-d)](https://cdn-images-1.medium.com/max/2000/0*88x6vemmqAiinYTO.png)_Farmhouse by [febin_raj](https://dribbble.com/Febinraj) for [Fireart Studio](https://dribbble.com/Fireart-d)_
+![Farmhouse by [febin_raj](https://dribbble.com/Febinraj) for [Fireart Studio](https://dribbble.com/Fireart-d)](../../../static/assets/farmhouse.png)_Farmhouse by [febin_raj](https://dribbble.com/Febinraj) for [Fireart Studio](https://dribbble.com/Fireart-d)_
 
 ## You made it!
 

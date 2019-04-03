@@ -9,9 +9,7 @@ draft: false
 
 It’s the dawn of 2019 and we just made a big decision: We are stepping away from doing web design services and film production. This is **really big for us** because we were not doing bad business. In contrary, considering that we built up the company during our studies, we did really well. We always had something in the pipeline and did roughly 100K\$ in revenue in the last year.
 
-So why did we quit the traditional agency business? And what are we doing now? Let‘s dive in.
-
----
+So why did we quit the traditional agency business? And what are we doing now? _Let‘s dive in._
 
 ## The quirks of traditional agency business
 
@@ -19,7 +17,8 @@ Way back in 2016 we started the company by meeting in a local pub. As you may gu
 
 And this worked out for us. We started to pick up our first clients very quickly and got things rolling.
 
-![On our way to the first client (Just three weeks after starting the company!)](https://cdn-images-1.medium.com/max/3200/0*SjVtQdwx2pq6IkOm)_On our way to the first client (Just three weeks after starting the company!)_
+![On our way to the first client (Just three weeks after starting the company!)](https://cdn-images-1.medium.com/max/3200/0*SjVtQdwx2pq6IkOm)
+_On our way to the first client (Just three weeks after starting the company!)_
 
 After the first project, we realised what probably everyone realises after the first project: _We need business cards_. So we did that. Then we realised we needed a website. So we made one. And at the drop of a hat, we had a running agency with real clients.
 
@@ -61,7 +60,7 @@ At the end of 2018 our thinking was highly influenced by three things:
 
 **Design Sprint** is something we have _always_ been waiting for. We think it’s the best process right now to get an initial idea of the ground and test it against real users. For us, it’s also a great opportunity to extend our skills more into the creative process of creating digital products.
 
-**State of Digital Nation 2020 **shines a light on the agency and the direction in which things are going. Many of our thoughts about the industry are reflected in Jules writing. His view gave us confidence that its good decision to get back to the drawing board.
+**State of Digital Nation 2020** shines a light on the agency and the direction in which things are going. Many of our thoughts about the industry are reflected in Jules writing. His view gave us confidence that its good decision to get back to the drawing board.
 
 **It doesn’t have to be crazy at work**, reminded us what is really important to us. We love doing business and helping companies to make real progress. But what’s far more important is to build a healthy and calm company. A company that supports Employees to live a balanced life and that provides massive value to clients.
 

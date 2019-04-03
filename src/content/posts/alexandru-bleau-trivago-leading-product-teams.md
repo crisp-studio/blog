@@ -41,7 +41,8 @@ So it’s not a one size fits all thing. The sooner you get to talk to them, the
 
 The biggest mistake that you can make, if you’re okay with the change, is to assume that everybody should be too. Because everybody won’t be okay. This is a big change. You have to understand what people are going to go through if you have to have any hope. So to answer your question, you really need to find your best way to let them speak out what they fear about the change. Otherwise, there is no hope for you to actually mitigate any of the damage and it will only take longer for you to go through the change.
 
-![Alex & Tauan](https://cdn-images-1.medium.com/max/3200/1*Ny3TGWJ8QKHqvwD1S8o72w.jpeg)_Alex & Tauan_
+![Alex & Tauan](../../../static/assets/alex-and-tauan.jpeg)
+_Alex & Tauan_
 
 ## What does your schedule at work look like?
 
@@ -61,7 +62,7 @@ Up until last year, I was working mainly with the interface teams at trivago and
 
 So let’s say one of the main challenges right now is to know exactly what part of knowledge I should focus on to be most efficient for my team. So instead of going through all of the algorithms, I go through what are performance metrics that I can use, what are things to look out for when using this specific algorithm. So my focus is: What knowledge do I need to ask better questions in our team meetings. And I leave the how and the actual implementation to the team.
 
-![The interview setting](https://cdn-images-1.medium.com/max/5680/1*vIiqJKJzFyYTCbQGKaQWnw.png)_The interview setting_
+![The interview setting](../../../static/assets/interview-setting.png)_The interview setting_
 
 ## How do you handle not knowing everything?
 
@@ -95,7 +96,7 @@ If you would go out on vacation things would run at close to 100% efficiency bec
 
 To do that, the team needs to own the problem. The team needs to be credited for solving the problem. The team needs to be rewarded for giving a damn about the problem. The credit is not yours. It’s the makers’. If you want them to invest and burn the midnight oil thinking about how they can squash that bug then the credit and the praise of the work coming from everyone is currency. And that is how you pay, you transfer it to the team.
 
-![Team grinding the PO](https://cdn-images-1.medium.com/max/2000/1*SiVXz_2L2492bPkvAVsPkg.jpeg)_Team grinding the PO_
+![Team grinding the PO](../../../static/assets/trivago-team.jpeg)_Team grinding the PO_
 
 And every time I hear some manager or another team saying: “Congratulations Alex for your release.” I’m like: “Thank you, I’ll forward that to the team” Always. No exceptions. Very publicly.
 
@@ -121,7 +122,7 @@ The second one is about how we look at data and how we de-bias ourselves. Balanc
 
 And to zoom-out comes third. This is a lesson I learned the hard way but sometimes it doesn’t make sense to do something. Teams are very good at solving problems, at removing pain from the user. But we have to ask ourselves, is solving this really worth it? How many users are affected by this? Is this 0,001%? Then it has to stop immediately. Because we might have 50% of other people that might be delighted by us building this other feature. By default, if you’re making something, you’re going deep into the problem. This is where you have to zoom out. It’s very hard to make and reflect at the same time.
 
-![Alex speaking in Karlsruhe](https://cdn-images-1.medium.com/max/2048/1*ILH9JpygTlJ4HqcG2cdarA.jpeg)_Alex speaking in Karlsruhe_
+![Alex speaking in Karlsruhe](../../../static/assets/alex-speaking-in-karlsruhe.jpeg)_Alex speaking in Karlsruhe_
 
 ## Thinking about the younger Alex, what’s your advice to handle emotional reactions at your job?
 
