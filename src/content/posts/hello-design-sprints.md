@@ -77,11 +77,3 @@ Kevin Rose talks ‘Sprint’ with GV’s Jake Knapp and Daniel Burka: [https://
 The Sprint Book by Jake Knapp with John Zeratsky and Braden Kowitz: [https://www.thesprintbook.com/how](https://www.thesprintbook.com/how)
 
 Jonathan Courtney, Co-Founder & CEO of AJ&Smart: [https://medium.com/@jicecream](https://medium.com/@jicecream)
-
-![](https://cdn-images-1.medium.com/max/3840/1*hGVXImT3GdnlydpWKuTNJg.png)
-
-**Hey! Thanks *a lot *for reading the article and for your interest in our journey. If you want to follow along, we also have an email list.**
-
-**No spam, just some updates from time to time on what we are doing.**
-
-**If you are interested to follow along, you can [sign-up here](http://eepurl.com/gcZnzv).**
