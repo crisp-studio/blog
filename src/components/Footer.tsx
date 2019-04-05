@@ -86,6 +86,20 @@ const Footer: React.FunctionComponent = () => {
           >
             Crisp Studio
           </a>
+          <a
+            href="https://crisp.studio/pdf/privacy.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy
+          </a>
+          <a
+            href="https://crisp.studio/pdf/disclaimer.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Disclaimer
+          </a>
           <a href="/rss.xml">RSS</a>
         </SiteFooterNav>
       </div>
