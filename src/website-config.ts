@@ -41,8 +41,8 @@ const config: WebsiteConfig = {
   instagram: 'https://www.instagram.com/crispstudio',
   showSubscribe: true,
   mailchimpAction:
-    'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
-  mailchimpName: 'b_a89b6987ac248c81b0b7f3a0f_7d777b7d75',
+    'https://studio.us7.list-manage.com/subscribe/post?u=af08cec2ad86461d791bcde65&amp;id=25c576fa1f',
+  mailchimpName: 'EMAIL',
 };
 
 export default config;
