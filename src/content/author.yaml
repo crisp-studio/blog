@@ -1,15 +1,15 @@
 - id: René Nauheimer
   avatar: ./avatars/rene.jpg
-  bio: The professional publishing platform
+  bio: Design Sprint Facilator, who loves great food and happy groups of people
   twitter: renaui
-  profile_image: ../../static/assets/alex-knight-326705-unsplash.jpg
+  profile_image: ../../static/assets/author-background.jpg
 - id: Daniel Wirtz
   avatar: ./avatars/daniel.jpg
-  bio: This is another test author with a profile background image
+  bio: Half designer, half developer and little bit of entrepreneur
   twitter: wirtzdan
-  profile_image: ../../static/assets/alex-knight-326705-unsplash.jpg
+  profile_image: ../../static/assets/author-background.jpg
 - id: Leo Bernard
   avatar: ./avatars/leo.jpg
-  bio: This is another test author with a profile background image
+  bio: Developer who sings in a band and loves movies
   twitter: leolabs_org
-  profile_image: ../../static/assets/alex-knight-326705-unsplash.jpg
+  profile_image: ../../static/assets/author-background.jpg
