@@ -1,9 +1,9 @@
 ---
 title: 'Alexandru Bleau, Product Manager at Trivago about leading product teams'
 author: René Nauheimer
-tags: []
+tags: ['interviews']
 image: /assets/alexandru-bleau-product-manager-trivago.jpeg
-date: 'interview'
+date: '2019-03-11T10:00:00.000Z'
 draft: false
 ---
 

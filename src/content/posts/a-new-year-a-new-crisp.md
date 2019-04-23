@@ -1,9 +1,9 @@
 ---
 title: 'A new year, a new crisp'
 author: Daniel Wirtz
-tags: []
+tags: ['updates']
 image: /assets/a-new-year-a-new-crisp.jpg
-date: 'updates'
+date: '2019-01-03T10:00:00.000Z'
 draft: false
 ---
 
