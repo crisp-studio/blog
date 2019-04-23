@@ -2,7 +2,7 @@
 layout: post
 title: 'Hello Design Sprints'
 author: René Nauheimer
-tags: ['Speeches']
+tags: ['design']
 image: /assets/hello-design-sprints.jpg
 date: '2019-01-21T15:11:55.000Z'
 draft: false

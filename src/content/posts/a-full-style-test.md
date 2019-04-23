@@ -6,7 +6,7 @@ author: Daniel Wirtz
 date: 1015-21-30T07:03:47.149Z
 draft: true
 tags:
-  - Tests
+  - updates
 ---
 
 Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.

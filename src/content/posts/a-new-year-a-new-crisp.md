@@ -3,7 +3,7 @@ title: 'A new year, a new crisp'
 author: Daniel Wirtz
 tags: []
 image: /assets/a-new-year-a-new-crisp.jpg
-date: '2019-01-03T10:00:00.000Z'
+date: 'updates'
 draft: false
 ---
 
