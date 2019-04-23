@@ -2,9 +2,9 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'Crisp Studio Blog',
-    description: 'Our Blog',
-    siteUrl: 'https://blog.crisp.studio',
+    title: 'Better In Between',
+    description: 'Stories at the intersection of design and code',
+    siteUrl: 'https://betterinbetween.com',
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
