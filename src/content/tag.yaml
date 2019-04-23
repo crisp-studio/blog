@@ -1,12 +1,12 @@
 - id: interviews
   description: Interviews with interesting people in product management, design and development
-  image: ../../static/assets/blog-cover.jpg
+  image: ../../static/assets/cover-interviews.jpg
 - id: updates
   description: Updates from the makers and friends at Crisp Studio
-  image: ../../static/assets/blog-cover.jpg
+  image: ../../static/assets/cover-updates.jpg
 - id: design
   description: Thoughts and opinions on design
-  image: ../../static/assets/blog-cover.jpg
+  image: ../../static/assets/cover-design.jpg
 - id: development
   description: Thoughts and opinions on development
-  image: ../../static/assets/blog-cover.jpg
+  image: ../../static/assets/cover-development.jpg

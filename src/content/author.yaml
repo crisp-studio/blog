@@ -2,14 +2,14 @@
   avatar: ./avatars/rene.jpg
   bio: Design Sprint Facilator, who loves great food and happy groups of people
   twitter: renaui
-  profile_image: ../../static/assets/author-background.jpg
+  profile_image: ../../static/assets/cover-author.jpg
 - id: Daniel Wirtz
   avatar: ./avatars/daniel.jpg
   bio: Half designer, half developer and little bit of entrepreneur
   twitter: wirtzdan
-  profile_image: ../../static/assets/author-background.jpg
+  profile_image: ../../static/assets/cover-author.jpg
 - id: Leo Bernard
   avatar: ./avatars/leo.jpg
   bio: Developer who sings in a band and loves movies
   twitter: leolabs_org
-  profile_image: ../../static/assets/author-background.jpg
+  profile_image: ../../static/assets/cover-author.jpg
