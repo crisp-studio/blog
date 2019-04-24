@@ -6,7 +6,9 @@ tags:
 author: Daniel Wirtz
 image: /assets/design-and-code.jpg
 ---
-We started writing and publishing articles on Medium in January. It has been a great experience and we would be very happy to make headway. Here is how we want to do it. 
+We started writing and publishing articles on Medium in January. It has been a great experience and we would be very happy to make headway. Here is how we want to do it.
+
+---
 
 ## Move away from Medium
 
