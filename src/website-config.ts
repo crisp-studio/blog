@@ -31,7 +31,7 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'Better In Between - Stories at the intersection of design and code',
+  title: 'Better In Between',
   description:
     'Accelerating product teams at the intersection of design & code',
   coverImage: 'assets/blog-cover.jpg',
