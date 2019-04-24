@@ -133,7 +133,6 @@ const Author: React.FunctionComponent<AuthorTemplateProps> = props => {
         <meta property="og:site_name" content={config.title} />
         <meta property="og:type" content="profile" />
         <meta property="og:title" content={`${author.id} - ${config.title}`} />
-        <meta name="theme-color" content="#01D274" />
         <meta
           property="og:url"
           content={config.siteUrl + props.pathContext.slug}

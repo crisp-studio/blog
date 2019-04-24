@@ -85,7 +85,6 @@ const Tags: React.FunctionComponent<TagTemplateProps> = props => {
           name="twitter:url"
           content={config.siteUrl + props.pathContext.slug}
         />
-        <meta name="theme-color" content="#01D274" />
         {config.twitter && (
           <meta
             name="twitter:site"
