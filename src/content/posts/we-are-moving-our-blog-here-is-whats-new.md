@@ -8,9 +8,9 @@ image: /assets/design-and-code.jpg
 ---
 We started writing and publishing articles on Medium in January. It has been a great experience and we would be very happy to make headway. Here is how we want to do it.
 
----
+- - -
 
-## Move away from Medium
+## Moving away from Medium
 
 Nowadays, [a lot of blogs](https://www.google.com/search?q=blogs+leaving+medium) are stepping away from Medium. And there is a good reason for that. Medium was a unique platform in the beginning. A place for independent creators to express their thoughts and find audiences in a way that wasn't possible before. 
 
@@ -28,6 +28,8 @@ When we made the decision to move, it was great timing to go back to the drawing
 
 In recent years, we observed that design and code are now merging together. Slowly, but surely. And this results in an increasing demand for people, who are able to navigate at the intersection and speak both languages. We think that these people will be the makers of tomorrow by solving challenges creatively and by using all the possibilities that the tech world brings us.
 
-As designers and programmers ourselves, we thought that this is a great topic to write about. We named the blog "Better In Between", as a wordplay for helping people to flourish at the intersection of design and code. Inside the blog, we only have four tags: design, code, interviews, and updates (For everything that is happening at Crisp). 
+As designers and programmers ourselves, we thought that this is a great topic to write about. We named the blog "Better In Between", as a wordplay for helping people to flourish at the intersection of design and code. Inside the blog, we only have four tags: design, code, interviews, and updates (For everything that is happening at Crisp).
+
+![Sloth who looks interested](/assets/fascinating.gif "Hmmm.. fascinating")
 
 With the new blog, we also aim to write more a publish articles regularly. If you want to get notified, feel free to subscribe to this blog by email or just follow us on Instagram.
