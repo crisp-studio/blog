@@ -1,1 +1,0 @@
-import './preview-pane.css';

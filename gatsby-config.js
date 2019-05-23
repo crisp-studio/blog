@@ -63,11 +63,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
-        /**
-         * One convention is to place your Netlify CMS customization code in a
-         * `src/cms` directory.
-         */
-        modulePath: `${__dirname}/src/styles/preview-pane.ts`,
+        modulePath: `${__dirname}/src/cms/cms.ts`,
       },
     },
     'gatsby-transformer-json',
