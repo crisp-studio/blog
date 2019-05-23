@@ -42,7 +42,7 @@ On Monday we went through different exercises to find the key challenges of the 
 
 To align the team's knowledge on the challenge we were joined by outside experts such as a UX Researcher and a Store Manager of one of Mister Spex's physical stores. They helped us get further insights into the existing online and offline customers of Mister Spex. 
 
-At the end of the day, we had lots of post-its, a target on the customer journey, defined a 2-year goal and critical Sprint questions that we wanted to answer with the Sprint.
+At the end of the day, we had lots of Post-its, a target on the customer journey, a 2-year goal and critical Sprint questions that we wanted to answer with the Sprint.
 
 **The 2 Year Goal:**  
 
