@@ -6,17 +6,17 @@ tags:
 author: René Nauheimer
 image: /assets/dscf0151.jpg
 ---
-### Who is Mister Spex?
+# Who is Mister Spex?
 
 Eleven years ago, Mister Spex disrupted the traditional optics industry by launching an online platform. Now, with over three million customers and, on average, up to 15,000 orders per day, the company has become the most successful online optician in Europe. In addition to their online activities, the Mister Spex team also operates physical stores at prime locations, while expanding its network of partner opticians. Due to its multichannel sales concept, it's one of the pioneers in the field of online marketing for optical products.
 
-### The Challenge
+# The Challenge
 
 The company offers more than 10,000 frames from more than 100 brand names. That's a huge benefit when it comes to having the right glasses for their customers. But due to the wide selection of glasses finding the right glasses can also last a while and may even get overwhelming. So the Sprint was laid out to tackle on how to help customers finding the right glasses faster. Well, challenge accepted.
 
 ![The current Mister Spex website](/assets/dscf0481.jpg)
 
-### The Sprint Team
+# The Sprint Team
 
 To tackle the challenge we were a great interdisciplinary Sprint Team:
 
@@ -30,7 +30,7 @@ They blocked the first three of the five days of the Sprint to go from the chall
 
 ![Discussing Lightning Demo Results](/assets/dscf0339.jpg)
 
-### What Crisp Studio did
+# What Crisp Studio did
 
 To ensure the overall success of the Sprint and the focus on the challenge Crisp Studio organized and facilitated the whole sprint week making sure the exercises were understood and done in time. In order to ensure tangible validation results, we were responsible for the design and development of a high fidelity prototype. For the validation of the prototype, we made sure to recruit matching user testers and conducted the user tests on the last day of the sprint week.
 
