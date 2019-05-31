@@ -4,7 +4,7 @@ title: 'Mister Spex – Rethinking The Way We Buy Eyewear Today '
 tags:
   - updates
 author: René Nauheimer
-image: /assets/dscf0151.jpg
+image: /assets/mister-spex-cover.jpg
 ---
 # Who is Mister Spex?
 
