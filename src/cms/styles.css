@@ -14,7 +14,7 @@ body {
   line-height: 1.6em;
   background: #fff;
 
-  --blue: '#06D077';
+  --blue: '#FFDF40';
   --green: '#27AB84';
   --purple: '#ad26b4';
   --yellow: '#fecd35';
@@ -103,6 +103,7 @@ body video {
 }
 
 @media (max-width: 1040px) {
+
   body img,
   body video {
     width: 100%;
@@ -114,7 +115,7 @@ body img[src$='#full'] {
   width: 100vw;
 }
 
-body img + br + small {
+body img+br+small {
   display: block;
   margin-top: -3em;
   margin-bottom: 1.5em;
@@ -313,35 +314,27 @@ body table {
 
 body table {
   -webkit-overflow-scrolling: touch;
-  background: radial-gradient(
-        ellipse at left,
-        rgba(0, 0, 0, 0.2) 0%,
-        transparent 75%
-      )
-      0 center,
-    radial-gradient(ellipse at right, rgba(0, 0, 0, 0.2) 0%, transparent 75%)
-      100% center;
+  background: radial-gradient(ellipse at left,
+      rgba(0, 0, 0, 0.2) 0%,
+      transparent 75%) 0 center,
+    radial-gradient(ellipse at right, rgba(0, 0, 0, 0.2) 0%, transparent 75%) 100% center;
   background-attachment: scroll, scroll;
   background-size: 10px 100%, 10px 100%;
   background-repeat: no-repeat;
 }
 
 body table td:first-child {
-  background-image: linear-gradient(
-    to right,
-    white 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background-image: linear-gradient(to right,
+      white 50%,
+      rgba(255, 255, 255, 0) 100%);
   background-size: 20px 100%;
   background-repeat: no-repeat;
 }
 
 body table td:last-child {
-  background-image: linear-gradient(
-    to left,
-    white 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background-image: linear-gradient(to left,
+      white 50%,
+      rgba(255, 255, 255, 0) 100%);
   background-position: 100% 0;
   background-size: 20px 100%;
   background-repeat: no-repeat;
@@ -368,9 +361,11 @@ body table td {
   body {
     padding: 0;
   }
+
   body :before {
     display: none;
   }
+
   body :after {
     display: none;
   }

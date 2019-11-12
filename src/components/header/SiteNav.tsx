@@ -51,6 +51,7 @@ const NavStyles = css`
   margin: 0 0 0 -12px;
   padding: 0;
   list-style: none;
+  font-weight: 600;
 
   li {
     display: block;
@@ -63,7 +64,7 @@ const NavStyles = css`
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
+    color: #222;
     opacity: 1;
   }
 
@@ -100,19 +101,20 @@ const StyledLi = styled.li`
   :before {
     content: '';
     height: 14px;
-    border-left: 1px solid #fff;
+    border-left: 1px solid #222;
     display: inline-flex;
   }
 `;
 
 const SubscribeButton = styled.a`
   display: block;
-  padding: 4px 10px;
-  border: #fff 1px solid;
-  color: #fff;
+  padding: 6px 12px;
+  border: #222 1px solid;
+  color: #222;
   font-size: 1.2rem;
   line-height: 1em;
   border-radius: 10px;
+  font-weight: 600;
 
   :hover {
     text-decoration: none;

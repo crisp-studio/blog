@@ -59,7 +59,7 @@ export const SocialLink = css`
   align-items: center;
   margin: 0;
   padding: 10px;
-  color: #fff;
+  color: #222;
 
   :hover {
     opacity: 1;
@@ -74,7 +74,7 @@ export const SiteHeader = css`
   position: relative;
   padding-top: 12px;
   padding-bottom: 12px;
-  color: #fff;
+  color: #222;
   /* background: color(var(--darkgrey) l(-5%)) no-repeat center center; */
   background: ${colors.blue} no-repeat center center;
   background-size: cover;

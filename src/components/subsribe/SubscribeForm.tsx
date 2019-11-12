@@ -41,10 +41,10 @@ const SubscribeFormButton = styled.button`
   padding: 0 20px;
   height: 41px;
   outline: none;
-  color: #fff;
+  color: #222;
   font-size: 1.5rem;
   line-height: 37px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
   /* background: linear-gradient(

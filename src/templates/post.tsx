@@ -375,7 +375,7 @@ export default PageTemplate;
 
 export const query = graphql`
   query($slug: String, $primaryTag: String) {
-    logo: file(relativePath: { eq: "better-in-between-logo.png" }) {
+    logo: file(relativePath: { eq: "bib-logo.png" }) {
       childImageSharp {
         fixed {
           ...GatsbyImageSharpFixed

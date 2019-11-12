@@ -35,7 +35,7 @@ const config: WebsiteConfig = {
   description:
     'Accelerating product teams at the intersection of design & code',
   coverImage: 'assets/blog-cover.jpg',
-  logo: 'assets/better-in-between-logo.svg',
+  logo: 'assets/bib-logo.svg',
   lang: 'en',
   siteUrl: 'https://blog.crisp.studio',
   instagram: 'https://www.instagram.com/crispstudio',

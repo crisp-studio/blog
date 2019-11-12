@@ -3,7 +3,7 @@ import config from '../website-config';
 import Footer from '../components/Footer';
 import Helmet from 'react-helmet';
 import IndexLayout from '../layouts';
-import logo from '../../static/assets/better-in-between-logo.svg';
+import logo from '../../static/assets/bib-logo.svg';
 import PostCard from '../components/PostCard';
 import SiteNav from '../components/header/SiteNav';
 import Wrapper from '../components/Wrapper';
@@ -177,7 +177,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query {
-    logo: file(relativePath: { eq: "better-in-between-logo.png" }) {
+    logo: file(relativePath: { eq: "bib-logo.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.

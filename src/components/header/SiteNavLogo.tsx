@@ -38,7 +38,7 @@ const SiteNavLogo = () => (
   // <StaticQuery
   //   query={graphql`
   //     query HeadingQuery {
-  //       logo: file(relativePath: { eq: "better-in-between-logo.svg" }) {
+  //       logo: file(relativePath: { eq: "bib-logo.svg" }) {
   //         childImageSharp {
   //           fixed {
   //             ...GatsbyImageSharpFixed

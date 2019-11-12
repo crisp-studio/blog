@@ -474,7 +474,7 @@ const GlobalStyles = css`
   }
 
   body {
-    background: #f4f8fb;
+    background: #f7f7f7;
   }
 `;
 
